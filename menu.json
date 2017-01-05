@@ -1,0 +1,47 @@
+{
+  "categories": [
+    {
+      "names": "Appetizers",
+      "items": [
+        {
+          "name": "Chips",
+          "description": "A bag of chips that Karen brought for everyone.",
+          "price": 499
+        },
+        {
+          "name": "Taco's Bread",
+          "description": "A super tastey family favorite! (please note, these are not tacos, this is bread made by our chef Taco)",
+          "price": 499
+        }
+      ]
+    },
+    {
+      "name": "Entrees",
+      "items": [
+        {
+          "name": "Flat Bread Pizza",
+          "description": "It's like pizza, only the crust is flat bread",
+          "price": "Market Price"
+        }
+      ]
+    },
+    {
+  "name": "Desserts",
+  "items": [
+    {
+      "name": "Poutine",
+      "description": "French Fries with Gravy and cheese curds.",
+      "price": 799
+    },
+    {
+      "name": "Dan's Specials",
+      "items": [
+        {
+          "name": "Sideways Pizza",
+          "description": "Because that's how you have to turn it to fit throught the door. Feeds a small army, or one drunk.",
+          "price": 2000
+        }
+      ]
+    }
+  ]
+}
