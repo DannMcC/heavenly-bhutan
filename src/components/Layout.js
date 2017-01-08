@@ -24,13 +24,13 @@ class Layout extends Component {
             <Link to='/locations'>Locations</Link>
           </li>
         </ul>
-        <h1>The Majestic That</h1>
+        <h1>Heavenly Bhutan</h1>
       </nav>
       <main>
         {this.props.children}
       </main>
       <footer>
-        <p>&copy; 2017 The Majestic That.<br /> Built with &hearts; at The Iron Yard, in St Petersburg, Florida.</p>
+        <p>&copy; 2017 The Heavenly Bhutan.<br /> Built with &hearts; at The Iron Yard, in St Petersburg, Florida.</p>
       </footer>
     </div>
   }

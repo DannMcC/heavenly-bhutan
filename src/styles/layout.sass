@@ -1,5 +1,6 @@
 $h-font: 'Patua One', cursive
 $cont-font: 'Oswald', sans-serif
+$color-dark: #212126
 
 
 body,
@@ -8,10 +9,16 @@ body,
   min-height: 100vh
 
   h1
-    font-family: $h-font
+    font-family: 'Rock Salt', cursive
     text-align: center
-    font-size: 32px
+    font-size: 49px
+    border-bottom: 0
+    color: #F7484D
+    background-color: #F6EB5D
+    transition: 0.3s ease 0s
 
+  h1:hover
+    color: $color-dark
 
 .layout
   display: flex
@@ -36,7 +43,7 @@ nav ul
   justify-content: flex-end
   align-items: right
   text-align: right
-  border-top: black
+  border-top: $color-dark
 
 
 
@@ -46,7 +53,7 @@ nav ul
 
 
     a:link, a:visited, a:active
-      color: black
+      color: $color-dark
       padding: 14px 25px
       text-align: center
       text-decoration: none
@@ -54,15 +61,22 @@ nav ul
       transition: 0.3s ease 0s
 
     a:hover
-      background-color: black
+      background-color: $color-dark
       color: white
+      font-family: 'Rock Salt', cursive
+      font-size: 12px
+
 
 
       // &.visited
       //   font-family: $h-font
-      //   color: black
+      //   color: $color-dark
       //
       //
       // &.hover
       //   background-color: red
-      //   color: black
+      //   color: $color-dark
+footer
+  p
+    font-family: $cont-font
+    text-align: center
