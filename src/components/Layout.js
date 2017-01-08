@@ -9,7 +9,6 @@ class Layout extends Component {
 
   render () {
     return <div className='layout'>
-      <h1>The Majestic That</h1>
       <nav>
         <ul>
           <li>
@@ -25,6 +24,7 @@ class Layout extends Component {
             <Link to='/locations'>Locations</Link>
           </li>
         </ul>
+        <h1>The Majestic That</h1>
       </nav>
       <main>
         {this.props.children}

@@ -1,24 +1,24 @@
 import React, { Component } from 'react'
 import MenuSection from './MenuSection'
-import menuItems from '../menu.json'
+import data from '../data.json'
 
 class Menu extends Component {
 
   render () {
-    const categories = menuItems.categories.map((category, i) => {
+    const menu = data.menu.map((category, i) => {
       return <li key={i}>{category.name}</li>
     })
 
-    const sections = menuItems.categories.map((category, i) => {
+    const sections = data.menu.map((category, i) => {
       return <MenuSection name={category.name} items={category.items} key={i} />
     })
 
     return <div>
       <h2>Our Menu</h2>
 
-      <section className='categories'>
+      <section className='menu'>
         <ul>
-          {categories}
+          {menu}
         </ul>
       </section>
 

@@ -1,20 +1,27 @@
 import React, { Component } from 'react'
+import MenuItem from './MenuItem'
 
-class MenuItem extends Component {
+class MenuSection extends Component {
 
   static propTypes = {
     name: React.PropTypes.string.isRequired,
-    description: React.PropTypes.string.isRequired,
-    price: React.PropTypes.number.isRequired
+    items: React.PropTypes.array.isRequired
   }
 
   render () {
-    return <tr>
-      <th>{this.props.name}</th>
-      <td>{this.props.description}</td>
-      <td>${this.props.price / 100}</td>
-    </tr>
+    const items = this.props.items.map((item, i) => {
+      return <MenuItem name={item.name} description={item.description} price={item.price} key={i} />
+    })
+
+    return <section>
+      <h3>{this.props.name}</h3>
+      <table>
+        <tbody>
+          {items}
+        </tbody>
+      </table>
+    </section>
   }
 }
 
-export default MenuItem
+export default MenuSection

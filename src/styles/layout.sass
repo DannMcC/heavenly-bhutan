@@ -1,0 +1,68 @@
+$h-font: 'Patua One', cursive
+$cont-font: 'Oswald', sans-serif
+
+
+body,
+#root,
+.layout
+  min-height: 100vh
+
+  h1
+    font-family: $h-font
+    text-align: center
+    font-size: 32px
+
+
+.layout
+  display: flex
+  flex-direction: column
+
+main
+  max-width: 760px
+  min-width: 320px
+  width: 66vw
+  margin: 1em auto
+  padding: 1em
+  flex: 1
+  text-decoration: none
+
+
+
+nav ul
+  padding: 0px
+  display: flex
+  list-style: none
+  text-decoration: none
+  justify-content: flex-end
+  align-items: right
+  text-align: right
+  border-top: black
+
+
+
+  li
+    //margin-left: 1em
+    align-items: right
+
+
+    a:link, a:visited, a:active
+      color: black
+      padding: 14px 25px
+      text-align: center
+      text-decoration: none
+      display: inline-block
+      transition: 0.3s ease 0s
+
+    a:hover
+      background-color: black
+      color: white
+
+
+      // &.visited
+      //   font-family: $h-font
+      //   color: black
+      //
+      //
+      // &.hover
+      //   background-color: red
+      //   color: black
