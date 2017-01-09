@@ -1,25 +1,32 @@
 $h-font: 'Patua One', cursive
 $cont-font: 'Oswald', sans-serif
-$color-dark: #212126
+
+$color-dark: #5F5E5D
+$light: #F2EEEA
+$mid-light: #B4B2AE
+$accent-1: #E87162
+$accent-2: #E24A37
 
 
 body,
 #root,
 .layout
   min-height: 100vh
+  background-color: $mid-light
+  color: $color-dark
 
   h1
     font-family: 'Rock Salt', cursive
     text-align: center
     font-size: 49px
     border-bottom: 0
-    color: #F7484D
-    background-color: #F6EB5D
+    color: $accent-2
+    background-color: $light
     transition: 0.3s ease 0s
     margin: 0
 
-  h1:hover
-    color: #4D6C31
+  // h1:hover
+  //   color: #4D6C31
 
 .layout
   display: flex
@@ -44,27 +51,29 @@ nav ul
   justify-content: flex-end
   align-items: right
   text-align: right
-  border-top: #F6EB5D
-  background-color: #70994D
+  //border-top: #F6EB5D
+  background-color: $accent-1
   margin: 0
 
 
   li
-    //margin-left: 1em
+    margin-left: 1em
     align-items: right
 
 
     a:link, a:visited, a:active
-      color: #F6EB5D
+      color: $light
       padding: 14px 25px
-      text-align: center
+      text-align: left
       text-decoration: none
       display: inline-block
-      transition: 0.3s ease 0s
+      transition: all 0.3s ease
 
     a:hover
-      background-color: #F6EB5D
-      color: #4D6C31
+      background-size: 100%
+      //background-position: left
+      background-color: $light
+      color: $accent-2
       font-family: 'Rock Salt', cursive
       font-size: 12px
 
@@ -82,3 +91,5 @@ footer
   p
     font-family: $cont-font
     text-align: center
+    background-color: $accent-1
+    padding-bottom: 15px
